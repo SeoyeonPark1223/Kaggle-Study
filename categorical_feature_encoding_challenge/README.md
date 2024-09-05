@@ -104,22 +104,16 @@
     - ROC: Receiver Operating Characteristic Curve
         - **Y-Axis (TPR or Recall)**: Represents the proportion of actual positives that are correctly predicted. (TPR: True Positive Rate)
             
-            $$
-            
-            \text{TPR} = \frac{\text{True Positives (TP)}}{\text{True Positives (TP)} + \text{False Negatives (FN)}}
-            $$
+            $ \text{TPR} = \frac{\text{True Positives (TP)}}{\text{True Positives (TP)} + \text{False Negatives (FN)}} $
             
         - **X-Axis (FPR)**: Represents the proportion of actual negatives that are incorrectly predicted as positives. (FPR: False Positive Rate)
         
-        $$
-        
-        \text{FPR} = \frac{\text{False Positives (FP)}}{\text{False Positives (FP)} + \text{True Negatives (TN)}}
-        $$
+        $ \text{FPR} = \frac{\text{False Positives (FP)}}{\text{False Positives (FP)} + \text{True Negatives (TN)}} $
         
         - **The curve**: The ROC curve shows the trade-off between the true positive rate and the false positive rate as you vary the classification threshold. The closer the curve is to the top-left corner, the better the model’s performance.
     - AUC: Area Under the ROC Curve
         
-        ![Area under ROC curve](https://prod-files-secure.s3.us-west-2.amazonaws.com/ea2456d4-7ebc-4f70-aed1-e0059ee53a3e/4350ac4f-9e05-409a-bc17-0dd8dabd87a5/Screenshot_2024-09-06_at_1.41.15_AM.png)
+        ![Area under ROC curve](./ROC.png)
         
         Area under ROC curve
         

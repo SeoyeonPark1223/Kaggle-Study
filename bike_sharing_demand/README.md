@@ -11,15 +11,15 @@
     - Modeling: https://www.kaggle.com/code/trispark/bike-sharing-demand-modeling
 
 - Contents
-    - [**Goal**](https://www.notion.so/Bike-Sharing-Demand-d0bd7995d86c4fc3b9ce1fd1020c212b?pvs=21)
-    - [**Feature Engineering**](https://www.notion.so/Bike-Sharing-Demand-d0bd7995d86c4fc3b9ce1fd1020c212b?pvs=21)
-    - [**Training Model**](https://www.notion.so/Bike-Sharing-Demand-d0bd7995d86c4fc3b9ce1fd1020c212b?pvs=21)
+    - **Goal**
+    - **Feature Engineering**
+    - **Training Model**
         - **Linear Regression**
         - **Ridge Regression vs Lasso Regression**
         - **Random Forest Regression**
-    - [**Optimizing Hyper Parameters**](https://www.notion.so/Bike-Sharing-Demand-d0bd7995d86c4fc3b9ce1fd1020c212b?pvs=21)
+    - **Optimizing Hyper Parameters**
         - **Grid Search**
-    - [**Evaluation**](https://www.notion.so/Bike-Sharing-Demand-d0bd7995d86c4fc3b9ce1fd1020c212b?pvs=21)
+    - **Evaluation**
         - **RMSLE**
     
 
@@ -63,11 +63,11 @@
     | **Bias-Variance Tradeoff** | Increases bias but decreases variance | Increases bias, decreases variance, and encourages sparsity |
     | **Model Complexity** | Results in a less sparse, more complex model | Produces a sparse model by removing irrelevant features |
 
-![Ridge Regression ](https://prod-files-secure.s3.us-west-2.amazonaws.com/ea2456d4-7ebc-4f70-aed1-e0059ee53a3e/2385a609-b8ab-4a98-91f1-608e49762a08/Screenshot_2024-09-06_at_1.03.07_AM.png)
+![Ridge Regression ](./ridge.png)
 
 Ridge Regression 
 
-![Lasso Regression ](https://prod-files-secure.s3.us-west-2.amazonaws.com/ea2456d4-7ebc-4f70-aed1-e0059ee53a3e/223a2102-0897-42b3-b4fe-2ef196e411ca/Screenshot_2024-09-06_at_1.03.47_AM.png)
+![Lasso Regression ](./lasso.png)
 
 Lasso Regression 
 
@@ -101,7 +101,7 @@ Lasso Regression
 - RMSLE
     - Root Mean Squared Logarithmic Error
         
-        ![Screenshot 2024-09-05 at 11.39.30 PM.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ea2456d4-7ebc-4f70-aed1-e0059ee53a3e/8d3d7dd3-3d38-43cc-abe7-9b09105a93ae/Screenshot_2024-09-05_at_11.39.30_PM.png)
+        $$\[\sqrt{\frac{1}{n} \sum_{i=1}^{n} \left( \log(p_i + 1) - \log(a_i + 1) \right)^2}\]$$
         
         ```python
         def rmsle(y_true, y_pred, convertExp=True):

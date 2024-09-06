@@ -84,15 +84,15 @@
 - Logistic Regression
     - Reference link: https://www.youtube.com/watch?v=yIYKR4sgzI8
     
-    | Aspect                         | **Linear Regression**                                    | **Logistic Regression**                                     |
-|---------------------------------|----------------------------------------------------------|-------------------------------------------------------------|
-| **Problem Type**                | Regression (predicting continuous values)                | Classification (predicting categorical outcomes)             |
-| **Output**                      | Continuous value (e.g., 250,000 or 3.5)                  | Probability (between 0 and 1) or binary class (0 or 1)       |
-| **Mathematical Model**          | Linear equation                                           | Logistic (Sigmoid) function                                  |
-| **Formula**                     | $y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \cdots + \beta_n X_n$ | $\log\left(\frac{p}{1 - p}\right) = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \cdots + \beta_n X_n$ |
-| **Cost Function**               | Mean Squared Error (MSE)                                 | Log Loss (Cross-Entropy Loss)                                |
-| **Goal**                        | Minimize the error in predicting continuous outcomes      | Maximize the likelihood of correctly classifying outcomes    |
-| **Interpretation of Coefficients** | Change in target value for a unit change in feature    | Change in log-odds for a unit change in feature              |
+| Aspect                        | **Linear Regression**                                       | **Logistic Regression**                                  |
+|-------------------------------|------------------------------------------------------------|----------------------------------------------------------|
+| **Problem Type**               | Regression (predicting continuous values)                  | Classification (predicting categorical outcomes)          |
+| **Output**                     | Continuous value (e.g., 250,000 or 3.5)                    | Probability (between 0 and 1) or binary class (0 or 1)    |
+| **Mathematical Model**         | Linear equation                                            | Logistic (Sigmoid) function                               |
+| **Formula**                    | $\( y = \beta_0 + \beta_1 X_1 + \dots + \beta_n X_n \)$    | $\( \log\left(\frac{p}{1 - p}\right) = \beta_0 + \beta_1 X_1 + \dots + \beta_n X_n \)$ |
+| **Cost Function**              | Mean Squared Error (MSE)                                   | Log Loss (Cross-Entropy Loss)                             |
+| **Goal**                       | Minimize the error in predicting continuous outcomes       | Maximize the likelihood of correctly classifying outcomes |
+| **Interpretation of Coefficients** | Change in target value for a unit change in feature    | Change in log-odds for a unit change in feature           |
 
 ### Evaluation
 
@@ -101,11 +101,11 @@
     - ROC: Receiver Operating Characteristic Curve
         - **Y-Axis (TPR or Recall)**: Represents the proportion of actual positives that are correctly predicted. (TPR: True Positive Rate)
             
-            $ \text{TPR} = \frac{\text{True Positives (TP)}}{\text{True Positives (TP)} + \text{False Negatives (FN)}} $
+            $$\text{TPR} = \frac{\text{True Positives (TP)}}{\text{True Positives (TP)} + \text{False Negatives (FN)}}$$
             
         - **X-Axis (FPR)**: Represents the proportion of actual negatives that are incorrectly predicted as positives. (FPR: False Positive Rate)
         
-        $ \text{FPR} = \frac{\text{False Positives (FP)}}{\text{False Positives (FP)} + \text{True Negatives (TN)}} $
+        $$\text{FPR} = \frac{\text{False Positives (FP)}}{\text{False Positives (FP)} + \text{True Negatives (TN)}}$$
         
         - **The curve**: The ROC curve shows the trade-off between the true positive rate and the false positive rate as you vary the classification threshold. The closer the curve is to the top-left corner, the better the model’s performance.
     - AUC: Area Under the ROC Curve

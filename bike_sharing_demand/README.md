@@ -63,11 +63,11 @@
     | **Bias-Variance Tradeoff** | Increases bias but decreases variance | Increases bias, decreases variance, and encourages sparsity |
     | **Model Complexity** | Results in a less sparse, more complex model | Produces a sparse model by removing irrelevant features |
 
-![Ridge Regression ](./ridge.png)
+<img src="./ridge.png" alt="Ridge Regression" width="300">
 
 Ridge Regression 
 
-![Lasso Regression ](./lasso.png)
+<img src="./lasso.png" alt="Lasso Regression" width="300">
 
 Lasso Regression 
 
@@ -101,7 +101,7 @@ Lasso Regression
 - RMSLE
     - Root Mean Squared Logarithmic Error
         
-        $$\[\sqrt{\frac{1}{n} \sum_{i=1}^{n} \left( \log(p_i + 1) - \log(a_i + 1) \right)^2}\]$$
+        $$\sqrt{\frac{1}{n} \sum_{i=1}^{n} \left( \log(p_i + 1) - \log(a_i + 1) \right)^2}$$
         
         ```python
         def rmsle(y_true, y_pred, convertExp=True):

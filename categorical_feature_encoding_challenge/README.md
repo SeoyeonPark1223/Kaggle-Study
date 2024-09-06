@@ -1,3 +1,5 @@
+# Categorical Feature Encoding Challenge 
+
 - Tutorial Link
     - 탐색적 데이터 분석 : https://www.kaggle.com/werooring/ch7-eda
     - 베이스라인 모델 : https://www.kaggle.com/werooring/ch7-baseline

@@ -63,19 +63,6 @@
     | **Bias-Variance Tradeoff** | Increases bias but decreases variance | Increases bias, decreases variance, and encourages sparsity |
     | **Model Complexity** | Results in a less sparse, more complex model | Produces a sparse model by removing irrelevant features |
 
-<!-- <img src="./ridge.png" alt="Ridge Regression" width="300">
-
-Ridge Regression 
-
-<img src="./lasso.png" alt="Lasso Regression" width="300">
-
-Lasso Regression  -->
-
-<div style="display: flex; justify-content: space-around;">
-    <img src="./ridge.png" alt="Ridge Regression" width="300">
-    <img src="./lasso.png" alt="Lasso Regression" width="300">
-</div>
-
 1. **Random Forest Regression**
     - Reference link: https://www.youtube.com/watch?v=J4Wdy0Wc_xQ
     - Useful for regression tasks where the goal is to predict a continuous value

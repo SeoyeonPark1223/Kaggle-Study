@@ -9,13 +9,13 @@
     - Modeling: https://www.kaggle.com/code/trispark/categorical-feature-encoding-challenge-modeling
 
 - Contents
-    - [**Goal**](https://www.notion.so/Categorical-Feature-Encoding-Challenge-b5a53838f6474fd9b46134f9c4e41457?pvs=21)
-    - [**Feature Engineering**](https://www.notion.so/Categorical-Feature-Encoding-Challenge-b5a53838f6474fd9b46134f9c4e41457?pvs=21)
+    - **Goal**
+    - **Feature Engineering**
         - **One Hot Encoding**
         - **Feature Encoding & Feature Scaling**
-    - [**Training Model**](https://www.notion.so/Categorical-Feature-Encoding-Challenge-b5a53838f6474fd9b46134f9c4e41457?pvs=21)
+    - **Training Model**
         - **Logistic Regression**
-    - [**Evaluation**](https://www.notion.so/Categorical-Feature-Encoding-Challenge-b5a53838f6474fd9b46134f9c4e41457?pvs=21)
+    - **Evaluation**
         - **ROC & AUC**
 
 ### Goal
@@ -43,6 +43,7 @@
     - Limitation
         - **Inefficient for high-cardinality features**: Creates many columns, which can lead to high-dimensionality
         - **Not suitable for ordinal features**: One-hot encoding does not capture the ordinal nature (the inherent order) of the data. For example, it does not reflect that high school < college < postgraduate
+
 - **Feature Encoding & Feature Scaling**
     - Binary feature encoding
         
@@ -83,19 +84,15 @@
 - Logistic Regression
     - Reference link: https://www.youtube.com/watch?v=yIYKR4sgzI8
     
-    | Aspect | **Linear Regression** | **Logistic Regression** |
-    | --- | --- | --- |
-    | **Problem Type** | Regression (predicting continuous values) | Classification (predicting categorical outcomes) |
-    | **Output** | Continuous value (e.g., 250,000 or 3.5) | Probability (between 0 and 1) or binary class (0 or 1) |
-    | **Mathematical Model** | Linear equation | Logistic (Sigmoid) function |
-    | **Formula** | 
-    $y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \cdots + \beta_n X_n$
-     | 
-    $\log\left(\frac{p}{1 - p}\right) = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \cdots + \beta_n X_n$
-     |
-    | **Cost Function** | Mean Squared Error (MSE) | Log Loss (Cross-Entropy Loss) |
-    | **Goal** | Minimize the error in predicting continuous outcomes | Maximize the likelihood of correctly classifying outcomes |
-    | **Interpretation of Coefficients** | Change in target value for a unit change in feature | Change in log-odds for a unit change in feature |
+    | Aspect                         | **Linear Regression**                                    | **Logistic Regression**                                     |
+|---------------------------------|----------------------------------------------------------|-------------------------------------------------------------|
+| **Problem Type**                | Regression (predicting continuous values)                | Classification (predicting categorical outcomes)             |
+| **Output**                      | Continuous value (e.g., 250,000 or 3.5)                  | Probability (between 0 and 1) or binary class (0 or 1)       |
+| **Mathematical Model**          | Linear equation                                           | Logistic (Sigmoid) function                                  |
+| **Formula**                     | $y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \cdots + \beta_n X_n$ | $\log\left(\frac{p}{1 - p}\right) = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \cdots + \beta_n X_n$ |
+| **Cost Function**               | Mean Squared Error (MSE)                                 | Log Loss (Cross-Entropy Loss)                                |
+| **Goal**                        | Minimize the error in predicting continuous outcomes      | Maximize the likelihood of correctly classifying outcomes    |
+| **Interpretation of Coefficients** | Change in target value for a unit change in feature    | Change in log-odds for a unit change in feature              |
 
 ### Evaluation
 

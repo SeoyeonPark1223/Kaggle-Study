@@ -6,6 +6,9 @@
     - 성능 개선 : https://www.kaggle.com/werooring/ch9-modeling
 
 - My Work
+    - https://www.kaggle.com/code/trispark/predict-future-sales-eda
+    - https://www.kaggle.com/code/trispark/predict-future-sales-baseline
+    - https://www.kaggle.com/code/trispark/predict-future-sales-modeling
 
 - Contents
     - **Goal**

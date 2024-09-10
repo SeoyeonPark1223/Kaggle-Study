@@ -12,6 +12,8 @@
 - My Work
     - [https://www.kaggle.com/code/trispark/aerial-cactus-identification-eda](https://www.kaggle.com/code/trispark/aerial-cactus-identification-eda/edit)
     - [https://www.kaggle.com/code/trispark/aerial-cactus-identification-baseline](https://www.kaggle.com/code/trispark/aerial-cactus-identification-baseline/notebook)
+    - https://www.kaggle.com/code/trispark/aerial-cactus-identification-modeling
+    - https://www.kaggle.com/trispark/aerial-cactus-identification-modeling-2
     
 
 ### Contents

@@ -39,9 +39,6 @@
 ### 2. Convolutional Neural Network
 
 - Reference link: https://www.youtube.com/watch?v=HGwBXDKFk9I
-- My summary
-    
-    [MLB.pdf](./src/MLB.pdf)
     
 
 ### 3. Baseline Model

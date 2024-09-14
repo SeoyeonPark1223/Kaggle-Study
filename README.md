@@ -1,6 +1,6 @@
 # Kaggle_Rep
 
-- Repository dedicated for Kaggle Competitions 
+- Repository dedicated for Kaggle Study
 - My Kaggle Profile 👉 [Kaggle](https://www.kaggle.com/trispark)
 
 ## General ML Problem Solving Process

@@ -2,6 +2,7 @@
 
 - Repository dedicated for Kaggle Study
 - My Kaggle Profile 👉 [Kaggle](https://www.kaggle.com/trispark)
+- Notion Page 👉 [MLB Study](https://www.notion.so/Google-MLB-e9fb1b81889b4edd9a938ea73dfca248)
 
 ## General ML Problem Solving Process
 

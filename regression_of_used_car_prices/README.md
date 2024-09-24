@@ -32,3 +32,29 @@
     - Concept
         - Use `lgbm_cat.py` to train and evaluate those 2 models
         - Add XGBoost model to see if it’s giving better result
+    - Trial 1: Use `xgb_lgbm_cat.py`
+    - LGBM, CatBoost was giving fine avg RMSE
+    - XGB; it’s not suitable for categorical data → have to do some feature engineering before training
+    
+    ```python
+    Mean LGBM RMSE: 72616.57284166712
+    Mean CatBoost RMSE: 72711.56992424013
+    Mean XGBoost RMSE: 73171.05564076733
+    ```
+    
+    - **Trial 2: Use Submission 2’s ver + Top 5 submissions**
+    
+        ```python
+        avg_rmse_xgb: 72609.76512922066
+        avg_rmse_lgb: 72342.5950606447
+        avg_rmse_cat: 72590.30626530075
+        ```
+        
+        ```python
+        final_sub = pd.read_csv('/kaggle/input/playground-series-s4e9/sample_submission.csv')
+        final_sub['price'] = (ensemble_sub['price']) * 0.4 + 0.6 * top5_sub['price']
+        final_sub.to_csv("submission.csv", index=False)
+        final_sub.head()
+        ```
+        
+        - **Result**: 72035.56019 → Shows Improvement

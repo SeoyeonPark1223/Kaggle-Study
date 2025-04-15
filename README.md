@@ -1,4 +1,4 @@
-# Kaggle_Study
+# Kaggle-Study
 
 - Repository dedicated for Kaggle Study
 - My Kaggle Profile 👉 [Kaggle](https://www.kaggle.com/trispark)
